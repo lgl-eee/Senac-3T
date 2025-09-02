@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 20px;
+            background-color: rgb(255, 0, 136);
+        }
+    </style>
+</head>
+<body>
+    <h1>clique para saber a sua idade</h1>
+    <button onclick="idade()">clique aqui primeiro</button>
+    <button onclick="sim()">clique para saber sua idade</button>
+
+    <script>
+        let age;
+        function idade(){
+            age = window.prompt('Insira sua idade.');
+        }
+        function sim(){
+            if (age) {
+                window.alert(`Você tem ${age} anos`);
+            } else {
+                window.alert('clique no outro botão acima primeiro.');
+            }
+        }
+    </script>
+
+</body>
+</html>
