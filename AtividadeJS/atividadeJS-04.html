@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <button onclick="clicar()">Botão 1</button>
+    <script>
+        function clicar() {
+            let produto = window.prompt('Digite o nome do produto.')
+            let preço = window.prompt(`informe o valor do produto`)
+            let dinheiro = window.prompt('informe quanto dinheiro voce entregou')
+            let troco = dinheiro - preço
+            window.alert(`voce comprou ${produto}, que custa R$${preço},00. deu R$${dinheiro},00 e vai receber R$${troco},00 de troco! volte sempre`)
+        }
+    </script>
+</body>
+</html>
